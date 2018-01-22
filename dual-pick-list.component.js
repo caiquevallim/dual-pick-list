@@ -85,7 +85,7 @@ module.component('dualPickList', {
     template:`
     <div class="bootstrap-duallistbox-container">
     <div class="box1 col-md-6" st-table="$ctrl.itemsLeft">
-        <label>{{'Not Selected'}}</label>
+        <label>{{$ctrl.textKeyLeftList}}</label>
 
         <div class="form-group input-icon-right" style="margin-bottom: 0px">
             <i class="glyphicon glyphicon-search"></i>
@@ -128,7 +128,7 @@ module.component('dualPickList', {
     </div>
 
     <div class="box2 col-md-6" st-table="$ctrl.itemsRight">
-        <label>{{'Selected'}}</label>
+        <label>{{$ctrl.textKeyRightList}}</label>
 
         <div class="form-group input-icon-right" style="margin-bottom: 0px">
             <i class="glyphicon glyphicon-search"></i>
@@ -179,6 +179,8 @@ module.component('dualPickList', {
     `,
     controllerAs: '$ctrl',
     bindings: {
+        textKeyLeftList:'@?',
+        textKeyRightList:'@?',
         list: '<',
         onTransaction:'&',
         headerConfig:'<?'
