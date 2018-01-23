@@ -29,6 +29,7 @@ Install through npm:
 $ npm install bootstrap@v3.3.6 --save
 $ npm install bootstrap-duallistbox --save
 $ npm install smart-table --save
+$ npm install lodash --save
 $ npm install dual-pick-list --save
 ```
 
