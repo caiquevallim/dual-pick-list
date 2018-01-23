@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ouracademy/ngx-dual-listbox/master/LICENSE)
 
 ## Demo
-https://github.com/caiquevallim/dual-pick-list.git
+https://github.com/caiquevallim/dual-pick-list-heroes
 
 ## Table of contents
 
@@ -22,6 +22,7 @@ The dual-pick-list has been created for help us to create a dual list box fastes
 Install through npm:
 ```
 $ npm install bootstrap@v3.3.6 --save
+$ npm install bootstrap-duallistbox --save
 $ npm install smart-table --save
 $ npm install dual-pick-list --save
 ```
