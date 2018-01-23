@@ -53,6 +53,12 @@ And now include in your app.scripts.json:
 }
 ```
 
+or also:
+
+```HTML5
+<script src="./node_modules/dual-pick-list/dual-pick-list.component.js"> </script>
+```
+
 
 Finally use in one of your apps components:
 
@@ -68,11 +74,12 @@ You're going to need to include in your HTML 5 file the following statment:
 
 ## Documentation
 * Bindings:
-    * `list` : `ArrayList[Item]`
-    * `headerConfig` : `{left:ArrayList[HConfig], right:ArrayList[HConfig]}` This property is used to you setup header of your left list and header of your right list
-    * `onTransaction` : ` ()=>{}` When any event is dispatched, you can get left list and right list through the dual-pick-list component
-    * `textKeyLeftList` : `String leftLabel` Name of left table
-    * `textKeyRightList` : `String rightLabel` Name of right table
+    * `list` : `ArrayList[Item]`. This bind is `required`.
+    * `headerConfig` : `{left:ArrayList[HConfig], right:ArrayList[HConfig]}`. This bind `required` and it's used to you setup header of your left list and header of your right list.
+    * `onTransaction` : ` ()=>{}`. This bind `required`, when any event is dispatched, you can get left list and right list through the dual-pick-list component.
+    * `textKeyLeftList` : `String leftLabel`. Name of left table. This bind is not `required`. It has a value `Not Selected` as default.
+    * `textKeyRightList` : `String rightLabel`. Name of right table. This bind is not `required`. It has a value `Selected` as default.
+    * `placeHolder` : `String placeholder`. Search input left and right.
 
 * Models:
     * `Item`
