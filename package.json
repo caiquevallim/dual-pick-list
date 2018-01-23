@@ -1,6 +1,6 @@
 {
   "name": "dual-pick-list",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Is is a component to work with dual list using just one list",
   "main": "dual-pick-list.component.js",
   "scripts": {
