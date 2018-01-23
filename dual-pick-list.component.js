@@ -108,12 +108,12 @@ module.component('dualPickList', {
             <table class="table table-striped table-bordered" >
                 <thead>
                     <tr>
-                        <th ng-repeat="h in $ctrl.headerLeft | filter: {visible:true}" class="text-left">{{h.text}}</th>
+                        <th ng-repeat="h in $ctrl.headerLeft | filter:{hidden:'!true'} " class="text-left">{{h.text}}</th>
                     </tr>
                 </thead>
                 <tbody class="text-left">
                     <tr ng-repeat="itemLeft in $ctrl.itemsLeft | filter : filterNotSelected track by $index" st-select-row="itemLeft" st-select-mode="multiple" >
-                        <td ng-repeat="l in $ctrl.headerLeft | filter: {visible:true}" class="text-left">
+                        <td ng-repeat="l in $ctrl.headerLeft |  filter:{hidden:'!true'} " class="text-left">
                             <span ng-if="!l.custom">{{itemLeft[l.key]}}</span>
                             <select ng-if="l.select"class="form-control" name="{{'selectLeft'+'-'+$index}}" id="selectLeft+'-'+$index" ng-model="itemLeft[l.key]" style="height: inherit;" ng-change="$ctrl.transact()">
                                 <option ng-repeat="item in l.select.list" value="{{item.id}}">{{item.text}}</option>
@@ -150,12 +150,12 @@ module.component('dualPickList', {
             <table class="table table-striped table-bordered" >
                 <thead>
                     <tr>
-                        <th ng-repeat="h in $ctrl.headerRight | filter: {visible:true}" class="text-left">{{h.text}}</th>
+                        <th ng-repeat="h in $ctrl.headerRight |  filter:{hidden:'!true'} " class="text-left">{{h.text}}</th>
                     </tr>
                 </thead>
                 <tbody class="text-left">
                     <tr ng-repeat="itemRight in $ctrl.itemsRight | filter : filterSelected track by $index" st-select-row="itemRight" st-select-mode="multiple" >
-                        <td ng-repeat="r in $ctrl.headerRight | filter: {visible:true}" class="text-left">
+                        <td ng-repeat="r in $ctrl.headerRight |  filter:{hidden:'!true'} " class="text-left">
                             <span ng-if="!r.custom">{{itemRight[r.key]}}</span>
                             <select ng-if="r.select"class="form-control" name="{{'selectRight-'+$index}}" id="selectRight+'-'+$index" ng-model="itemRight[r.key]" style="height: inherit;" ng-change="$ctrl.transact()">
                                 <option ng-repeat="item in r.select.list" value="{{item.id}}">{{item.text}}</option>

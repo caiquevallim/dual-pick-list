@@ -89,7 +89,8 @@ You're going to need to include in your HTML 5 file the following statment:
         * property `fieldOfYourInterest` : For example: `cdClient`, `descClient` or any other that you will need
 
     * `HConfig`
-        * property `text : String` Name of the column
+        * property `text : String`. Name of the column.
+        * property `hidden : Boolean`. If you need of some field to just your business and you do not want to show this for you client, so you'll need to hidden this collumn getting value `true` in this property.
         * property `key : String` This property should contain the name that you have been past on `Item.fieldOfYourInterest` property above
         * property `custom : Boolean` : `true` for you use some components in your records of this column
         * property `select : ObjectSelect`: It can not be `true` if `custom` has `false`
