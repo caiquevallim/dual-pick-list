@@ -1,9 +1,14 @@
-# dual-pick-list / AngularJS 1.6.1 or lower
+# dual-pick-list / AngularJS 1.6.x or lower
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ouracademy/ngx-dual-listbox/master/LICENSE)
 
+
 ## Demo
-https://github.com/caiquevallim/dual-pick-list-heroes
+
+<a href="https://github.com/caiquevallim/dual-pick-list-heroes">https://github.com/caiquevallim/dual-pick-list-heroes</a>
+
+<img src="dual-pick-list-img.png" width="1080" hspace="12"/>
+
 
 ## Table of contents
 
