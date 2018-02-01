@@ -119,7 +119,7 @@ module.component('dualPickList', {
                                 <option ng-repeat="item in l.select.list" value="{{item.id}}">{{item.text}}</option>
                             </select>
                             <input ng-if="l.checkbox" type="checkbox" ng-model="itemRight[l.key]" ng-click="$ctrl.transact()">
-                            <button ng-if="l.button" class="btn btn-default" ng-click="l.button.onClick(itemLeft)">{{l.text}}</button>
+                            <button ng-if="l.button" type="button" class="btn btn-default" ng-click="l.button.onClick(itemLeft)">{{l.text}}</button>
                         </td>
                     </tr>
                 </tbody>
